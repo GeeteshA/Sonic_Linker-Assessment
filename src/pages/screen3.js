@@ -109,8 +109,8 @@ export default function Screen3() {
         </div>
       </div>
 
-      {/* Keyword Selection */}
-      <div className="mt-6">
+     {/* Keyword Selection */}
+     <div className="mt-6">
         <h3 className="text-lg font-bold text-gray-800">
           Choose keywords to rank better on:
         </h3>
