@@ -68,7 +68,7 @@ export default function Screen3() {
           >
             {/* Name and Icon */}
             <div className="flex items-center justify-between mb-2">
-              <p className="text-lg font-semibold text-gray-700">{stat.name}</p>
+              <p className="text-base font-semibold text-gray-700">{stat.name}</p>
               <div className="bg-white p-2 rounded-full">{stat.icon}</div>
             </div>
 
