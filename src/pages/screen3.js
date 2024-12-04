@@ -109,28 +109,43 @@ export default function Screen3() {
         </div>
       </div>
 
-     {/* Keyword Selection */}
-     <div className="mt-6">
-        <h3 className="text-lg font-bold text-gray-800">
-          Choose keywords to rank better on:
-        </h3>
-        <div className="mt-4">
-          {[
-            'Japanese food near me',
-            'Best asian restaurant near me',
-            'Best asian restaurant near me',
-            'Best asian restaurant near me',
-          ].map((keyword, index) => (
-            <label key={index} className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 h-4 w-4 text-[#5259a6] border-gray-300 rounded"
-              />
-              <span className="text-sm text-gray-700">{keyword}</span>
-            </label>
-          ))}
-        </div>
-      </div>
+{/* Keyword Selection */}
+<div className="mt-6">
+  <h3 className="text-lg font-bold text-gray-800">
+    Choose keywords to rank better on:
+  </h3>
+  <div className="mt-4">
+    <label className="flex items-center mb-2">
+      <input
+        type="checkbox"
+        className="mr-2 h-4 w-4 text-[#5259a6] border-gray-300 rounded"
+      />
+      <span className="text-sm text-gray-700">Japanese food near me</span>
+    </label>
+    <label className="flex items-center mb-2">
+      <input
+        type="checkbox"
+        className="mr-2 h-4 w-4 text-[#5259a6] border-gray-300 rounded"
+      />
+      <span className="text-sm text-gray-700">Best asian restaurant near me</span>
+    </label>
+    <label className="flex items-center mb-2">
+      <input
+        type="checkbox"
+        className="mr-2 h-4 w-4 text-[#5259a6] border-gray-300 rounded"
+      />
+      <span className="text-sm text-gray-700">Best asian restaurant near me</span>
+    </label>
+    <label className="flex items-center mb-2">
+      <input
+        type="checkbox"
+        className="mr-2 h-4 w-4 text-[#5259a6] border-gray-300 rounded"
+      />
+      <span className="text-sm text-gray-700">Best asian restaurant near me</span>
+    </label>
+  </div>
+</div>
+
     </div>
   );
 }
