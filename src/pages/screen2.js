@@ -67,25 +67,21 @@ export default function Screen2() {
           Try this
         </a>.
       </p>
-
-      {/* Navigation */}
-      <div className="flex justify-between mt-auto pt-6">
-        {/* Back Button */}
-        <button
-          className="w-12 h-12 border-2 border-[#5259a6] text-[#5259a6] rounded-full flex items-center justify-center"
-          onClick={() => router.push('/')}
-        >
-          ←
-        </button>
-
-        {/* Forward Button */}
-        <button
-          className="w-12 h-12 bg-[#5259a6] text-white rounded-full flex items-center justify-center"
-          onClick={() => router.push('/screen3')}
-        >
-          →
-        </button>
-      </div>
+{/* Navigation */}
+<div className="flex justify-between items-center mt-auto pt-6 space-x-4">
+  <button
+    className="w-12 h-12 border-2 border-[#5259a6] text-[#5259a6] rounded-full flex items-center justify-center hover:bg-[#f0f0f0] transition-all"
+    onClick={() => router.push('/')}
+  >
+    ←
+  </button>
+  <button
+    className="w-12 h-12 bg-[#5259a6] text-white rounded-full flex items-center justify-center hover:bg-[#404a8b] transition-all"
+    onClick={() => router.push('/screen3')}
+  >
+    →
+  </button>
+</div>
 
     </div>
   );
