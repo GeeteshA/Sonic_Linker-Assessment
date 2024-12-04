@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import ProgressBar from '@/components/ProgressBar';
+import { HiArrowRight } from 'react-icons/hi';
 
 export default function Screen1() {
   const router = useRouter();
@@ -31,10 +32,10 @@ export default function Screen1() {
 
       {/* Navigation */}
       <button
-        className="w-12 h-12 bg-[#5259a6] text-white rounded-full flex items-center justify-center mt-4"
+        className="w-12 h-12 bg-[#5259a6] text-white rounded-full flex items-center justify-center hover:bg-[#404a8b] transition-all"
         onClick={() => router.push('/screen2')}
       >
-        →
+        <HiArrowRight className="w-6 h-6" />
       </button>
       <p className="text-xs text-gray-400 mt-2">Join 1,000 businesses growing with us</p>
     </div>

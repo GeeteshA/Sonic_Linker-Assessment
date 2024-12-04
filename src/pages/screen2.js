@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import ProgressBar from '../components/ProgressBar';
 import { FiMapPin, FiSearch, FiCheck } from 'react-icons/fi';
+import { HiArrowLeft, HiArrowRight } from 'react-icons/hi';
 
 export default function Screen2() {
   const router = useRouter();
@@ -72,14 +73,14 @@ export default function Screen2() {
         <button
           className="w-12 h-12 border-2 border-[#5259a6] text-[#5259a6] rounded-full flex items-center justify-center hover:bg-[#f0f0f0] transition-all"
           onClick={() => router.push('/')}
-        >
-          ←
+        > 
+          <HiArrowLeft className="w-6 h-6" />
         </button>
         <button
           className="w-12 h-12 bg-[#5259a6] text-white rounded-full flex items-center justify-center hover:bg-[#404a8b] transition-all"
           onClick={() => router.push('/screen3')}
         >
-          →
+          <HiArrowRight className="w-6 h-6" />
         </button>
       </div>
 
