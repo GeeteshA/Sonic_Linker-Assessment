@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEye, FaSearch, FaCalendarAlt, FaDirections, FaMousePointer } from 'react-icons/fa';
+import { FaEye, FaSearch, FaCalendarAlt, FaDirections, FaMousePointer, FaLink } from 'react-icons/fa';
 import { HiOutlineUserGroup } from 'react-icons/hi';
 import { HiMenu } from 'react-icons/hi'; 
 import { FiShare2 } from 'react-icons/fi';
@@ -96,16 +96,22 @@ export default function Screen3() {
             Sharing your GBP link with your customers
           </p>
           <div className="flex items-center space-x-2">
-            <input
-              type="text"
-              readOnly
-              value="https://njenwiJkZeeljknweoiho..."
-              className="flex-1 bg-gray-100 text-gray-500 p-2 rounded-lg border border-gray-300"
-            />
-            <button className="bg-[#5259a6] text-white px-4 py-2 rounded-lg text-sm flex items-center justify-center">
-              <FiShare2 className="text-white w-5 h-5" />
-            </button>
-          </div>
+  <div className="relative flex-1">
+  <FaLink 
+      className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black"
+      style={{ fontWeight: 300 }} 
+    />
+    <input
+      type="text"
+      readOnly
+      value="https://njenwiJkZeeljknweoiho..."
+      className="w-full bg-gray-100 text-gray-500 pl-10 p-2 rounded-lg border border-gray-300"
+    />
+  </div>
+  <button className="bg-[#5259a6] text-white px-4 py-2 rounded-lg text-sm flex items-center justify-center h-[42px]">
+    <FiShare2 className="text-white w-5 h-5" />
+  </button>
+</div>
         </div>
       </div>
 
