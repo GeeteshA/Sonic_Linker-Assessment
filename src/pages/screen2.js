@@ -14,7 +14,7 @@ export default function Screen2() {
       </div>
 
       {/* Title */}
-      <h1 className="text-lg font-semibold mt-6 text-center">
+      <h1 className="text-lg text-black font-bold mt-6 text-center">
         Link Your Google Business
       </h1>
 

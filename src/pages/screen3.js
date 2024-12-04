@@ -91,7 +91,7 @@ export default function Screen3() {
       <div className="mt-6">
         <h2 className="text-lg font-semibold text-gray-800">Recommended actions</h2>
         <div className="mt-3 p-4 rounded-lg">
-          <h2 className="text-lg font-bold py-2">Get more reviews</h2>
+          <h2 className="text-lg text-black font-bold py-2">Get more reviews</h2>
           <p className="text-sm text-gray-500 mb-2">
             Sharing your GBP link with your customers
           </p>
