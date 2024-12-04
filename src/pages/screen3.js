@@ -45,7 +45,7 @@ const statisticsData = [
 
 export default function Screen3() {
   return (
-    <div className="flex flex-col h-screen bg-white p-4 font-sans">
+    <div className="flex flex-col min-h-screen bg-white p-4 font-sans overflow-y-auto">
       {/* Header */}
       <div className="flex justify-between items-center">
         <h1 className="text-xl font-bold text-[#5259a6]">SonicLinker</h1>
@@ -109,8 +109,8 @@ export default function Screen3() {
         </div>
       </div>
 
-     {/* Keyword Selection */}
-     <div className="mt-6">
+      {/* Keyword Selection */}
+      <div className="mt-6">
         <h3 className="text-lg font-bold text-gray-800">
           Choose keywords to rank better on:
         </h3>
